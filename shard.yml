@@ -1,0 +1,17 @@
+name: api2
+version: 0.1.0
+
+authors:
+  - krthr <twilson@uninorte.edu.co>
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+
+targets:
+  api:
+    main: src/api.cr
+
+crystal: 0.34.0
+
+license: MIT

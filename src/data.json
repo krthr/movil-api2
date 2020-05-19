@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Papa Criolla",
+        "price": 1100,
+        "category": "VERDURA"
+    },
+    {
+        "name": "Carne (Libra)",
+        "price": 2300,
+        "category": "CARNE"
+    }
+]
