@@ -22,10 +22,6 @@ end
 
 get "/docs" do |ctx|
   ctx.response.content_type = "text/html"
-
   docs = File.open("./src/docs.md") { |file| file.gets_to_end }
-
-  puts docs
-
   Markd.to_html(docs, markd_renderer)
 end
