@@ -16,3 +16,24 @@ get "/search" do |ctx|
 
   result.to_json
 end
+
+get "/docs" do
+  docs = "
+	# Docs
+
+	- GET /
+		Just a ping endpoint.		
+
+	- GET /search?q=[query]&category=[category]
+		Search products.
+		
+		- q: is a text
+		- category: category of products
+
+	- GET /docs
+  "
+ 
+  env.response.content_type = "text/plain"
+
+  docs
+end
