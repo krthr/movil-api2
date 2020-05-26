@@ -68,17 +68,6 @@ Search products using:
     ]
     ```
     
-- `GET http://localhost:3000/search?category=VERDURA&q=papa`
-    ```
-    [
-        {
-            "name": "Papa Criolla",
-            "price": 1100.0,
-            "category": "VERDURA"
-        }
-    ]
-    ```
-    
 - `GET http://localhost:3000/search?category=VERDURA&q=carne`
     ```
     [
