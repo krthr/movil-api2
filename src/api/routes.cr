@@ -1,6 +1,9 @@
 require "kemal"
+require "markd"
 require "./middlewares.cr"
 require "./data.cr"
+
+markd_renderer = Markd::Options.new(smart: true, safe: true)
 
 get "/" do
   {
@@ -17,23 +20,12 @@ get "/search" do |ctx|
   result.to_json
 end
 
-get "/docs" do
-  docs = "
-	# Docs
+get "/docs" do |ctx|
+  ctx.response.content_type = "text/html"
 
-	- GET /
-		Just a ping endpoint.		
+  docs = File.open("./src/docs.md") { |file| file.gets_to_end }
 
-	- GET /search?q=[query]&category=[category]
-		Search products.
-		
-		- q: is a text
-		- category: category of products
+  puts docs
 
-	- GET /docs
-  "
- 
-  env.response.content_type = "text/plain"
-
-  docs
+  Markd.to_html(docs, markd_renderer)
 end
