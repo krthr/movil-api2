@@ -5,8 +5,188 @@
         "category": "VERDURA"
     },
     {
-        "name": "Carne (Libra)",
-        "price": 2300,
+        "name": "Platano Verde",
+        "price": 840,
+        "category": "VERDURA"
+    },
+    {
+        "name": "Cebolla Blanca",
+        "price": 550,
+        "category": "VERDURA"
+    },
+    {
+        "name": "Tomate",
+        "price": 590,
+        "category": "VERDURA"
+    },
+    {
+        "name": "Papa Criolla",
+        "price": 1100,
+        "category": "VERDURA"
+    },
+    {
+        "name": "Aguacate",
+        "price": 1150,
+        "category": "VERDURA"
+    },
+    {
+        "name": "Pimenton",
+        "price": 1000,
+        "category": "VERDURA"
+    },
+    {
+        "name": "Papa",
+        "price": 590,
+        "category": "VERDURA"
+    },
+    {
+        "name": "Leche Entera",
+        "price": 12750,
+        "category": "LACTEO"
+    },
+    {
+        "name": "Leche en Polvo (900 gr)",
+        "price": 18200,
+        "category": "LACTEO"
+    },
+    {
+        "name": "Pediasure (400 gr)",
+        "price": 42500,
+        "category": "LACTEO"
+    },
+    {
+        "name": "Carne de Res (1 Kg)",
+        "price": 8054,
         "category": "CARNE"
+    },
+    {
+        "name": "Filete de Res (500 gr)",
+        "price": 25300,
+        "category": "CARNE"
+    },
+    {
+        "name": "Carne de Cerdo (500 gr)",
+        "price": 4620,
+        "category": "CARNE"
+    },
+    {
+        "name": "Lomito de Cerdo (500 gr)",
+        "price": 7650,
+        "category": "CARNE"
+    },
+    {
+        "name": "Jamon",
+        "price": 9750,
+        "category": "CARNE"
+    },
+    {
+        "name": "Jamon Serrano (80 gr)",
+        "price": 5512,
+        "category": "CARNE"
+    },
+    {
+        "name": "Papel Higienico (12 Rollos)",
+        "price": 21450,
+        "category": "LIMPIEZA"
+    },
+    {
+        "name": "Toallas De Cocina",
+        "price": 3950,
+        "category": "LIMPIEZA"
+    },
+    {
+        "name": "Limpido (2 litros)",
+        "price": 2650,
+        "category": "LIMPIEZA"
+    },
+    {
+        "name": "Lavaloza",
+        "price": 6800,
+        "category": "LIMPIEZA"
+    },
+    {
+        "name": "Detergente Liquido (3 litros)",
+        "price": 42000,
+        "category": "LIMPIEZA"
+    },
+    {
+        "name": "Limpia Pisos (2 litros)",
+        "price": 7950,
+        "category": "LIMPIEZA"
+    },
+    {
+        "name": "Detergente Polvo (2 Kg)",
+        "price": 11350,
+        "category": "LIMPIEZA"
+    },
+    {
+        "name": "Harina De Trigo (500 gr)",
+        "price": 1650,
+        "category": "DESPENSA"
+    },
+    {
+        "name": "Lenteja (500 gr)",
+        "price": 1850,
+        "category": "DESPENSA"
+    },
+    {
+        "name": "Arroz (5 Kg)",
+        "price": 17900,
+        "category": "DESPENSA"
+    },
+    {
+        "name": "Harina de Maiz (1 Kg)",
+        "price": 3450,
+        "category": "DESPENSA"
+    },
+    {
+        "name": "Sal Refinada (1 Kg)",
+        "price": 1300,
+        "category": "DESPENSA"
+    },
+    {
+        "name": "Chocolate (500 gr)",
+        "price": 5750,
+        "category": "DESPENSA"
+    },
+    {
+        "name": "Banano",
+        "price": 280,
+        "category": "FRUTA"
+    },
+    {
+        "name": "Mango",
+        "price": 2050,
+        "category": "FRUTA"
+    },
+    {
+        "name": "Piña",
+        "price": 3150,
+        "category": "FRUTA"
+    },
+    {
+        "name": "Enjuague Bucal",
+        "price": 13800,
+        "category": "SALUD"
+    },
+    {
+        "name": "Hilo Dental",
+        "price": 11500,
+        "category": "SALUD"
+    },
+    {
+        "name": "Shampoo",
+        "price": 16950,
+        "category": "SALUD"
+    },
+    {
+        "name": "Alcohol",
+        "price": 4600,
+        "category": "SALUD"
+    },
+    {
+        "name": "Jabon Liquido",
+        "price": 7500,
+        "category": "SALUD"
     }
 ]
