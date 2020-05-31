@@ -24,14 +24,14 @@ Search products using:
     ```
     [
         {
-            "name": "Papa Criolla",
-            "price": 1100.0,
+            "name": "Papa",
+            "price": 590,
             "category": "VERDURA"
         },
         {
-            "name": "Carne (Libra)",
-            "price": 2300.0,
-            "category": "CARNE"
+            "name": "Leche Entera",
+            "price": 12750,
+            "category": "LACTEO"
         }
     ]
     ```
@@ -39,8 +39,8 @@ Search products using:
     ```
     [
         {
-            "name": "Papa Criolla",
-            "price": 1100.0,
+            "name": "Papa",
+            "price": 590,
             "category": "VERDURA"
         }
     ]
@@ -50,8 +50,8 @@ Search products using:
     ```
     [
         {
-            "name": "Papa Criolla",
-            "price": 1100.0,
+            "name": "Papa",
+            "price": 590,
             "category": "VERDURA"
         }
     ]
@@ -61,14 +61,14 @@ Search products using:
     ```
     [
         {
-            "name": "Papa Criolla",
-            "price": 1100.0,
+            "name": "Papa",
+            "price": 590,
             "category": "VERDURA"
         }
     ]
     ```
     
-- `GET http://localhost:3000/search?category=VERDURA&q=carne`
+- `GET http://localhost:3000/search?category=VERDURA&q=pescado`
     ```
     [
 
@@ -83,8 +83,13 @@ struct Product {
 }
 
 enum Category {
-    CARNE
     VERDURA
+    LACTEO
+    CARNE
+    LIMPIEZA
+    DESPENSA
+    FRUTA
+    SALUD
 }
 ```
 
