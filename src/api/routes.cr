@@ -13,9 +13,12 @@ end
 
 get "/search" do |ctx|
   q = ctx.params.query.fetch("q", "")
-  category = ctx.params.query.fetch("category", "")
 
-  result = Data.search q, category
+  categories = ctx.params.query.fetch("category", "")
+    .split(",")
+    .select { |cat| cat.size > 0 }
+
+  result = Data.search q, categories
 
   result.to_json
 end

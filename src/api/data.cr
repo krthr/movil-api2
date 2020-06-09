@@ -14,15 +14,17 @@ module Data
   end
 
   # Search in the `DATA` array using `q`
-  def self.search(q = "", category = "")
-    query = DATA.select do |item|
-      categoryQuery = category == "" ? true : category == item.category
+  def self.search(q = "", categories = [] of String)
+    categories_query = categories.size > 0
 
-      categoryQuery &&
+    query = DATA.select do |item|
+      valid_category = categories_query ? categories.includes?(item.category) : true
+
+      valid_category &&
         item.name
           .lstrip
           .downcase
-          .includes? q.lstrip.downcase
+          .includes? q.strip.downcase
     end
 
     query
