@@ -13,7 +13,7 @@ Just a ping endpoint.
 
 ---
 
-### `GET /search?q=[query]&category=[category]`
+### `GET /search?q=[query]&category=[category1,category2,...]`
 Search products using:
 
 - `q`: query text (name)
@@ -46,18 +46,23 @@ Search products using:
     ]
     ```
 
-- `GET http://localhost:3000/search?category=VERDURA`
+- `GET http://localhost:3000/search?category=VERDURA,CARNE`
     ```
     [
         {
             "name": "Papa",
             "price": 590,
             "category": "VERDURA"
+        },
+        {
+            name: "Carne",
+            "price": 2000,
+            "category": "CARNE"
         }
     ]
     ```
 
-- `GET http://localhost:3000/search?category=VERDURA&q=papa`
+- `GET http://localhost:3000/search?category=VERDURA,CARNE&q=papa`
     ```
     [
         {
